@@ -68,7 +68,7 @@ config.vm.define :manager, primary: true  do |manager|
     manager.vm.synced_folder ".", "/vagrant"
     manager.vm.provision "shell", inline: $manager_script, privileged: true#,  run: "always"
     manager.vm.provision "shell", privileged: true , inline: $git_vote_App, privileged: true #,  run: "always"
-    manager.vm.provision "shell",run: "always", privileged: true, inline: 
+    manager.vm.provision "shell", privileged: true, inline: 
     <<-SHELL
           echo "============== create new stack file ====================="
         sudo apt install git
