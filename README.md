@@ -11,6 +11,6 @@ deploy:
   labels:
     - "swarm.autoscaler=true"
  "
- Beside some selected services that needs to be scaled. The auto scaling mechanism is borrowed from https://github.com/jcwimer/docker-swarm-autoscaler where it depends on promethus and node exporters for mointioring purposes and once the threshold is hit it scales the services using this sh file https://github.com/jcwimer/docker-swarm-autoscaler/blob/master/docker-swarm-autoscaler/auto-scale.sh. Moreover we added the md5 password of the user in the deploy-stack-01.yml to not expose the plaintest password.
+ Beside some selected services that needs to be scaled. The auto scaling mechanism is borrowed from https://github.com/jcwimer/docker-swarm-autoscaler where it depends on promethus and node exporters for mointioring purposes and once the threshold is hit it scales the services using this sh file https://github.com/jcwimer/docker-swarm-autoscaler/blob/master/docker-swarm-autoscaler/auto-scale.sh. Moreover we added the md5 password of the user in the deploy-stack-01.yml to not expose the plaintext password.
  Once the file writing completed we start using vagrant ssh to access the manager node to deploy the autoscaler and the voting app.
  
