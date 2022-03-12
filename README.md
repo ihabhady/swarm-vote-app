@@ -5,7 +5,7 @@ Steps to deploy:
 2. Run app.sh , Note: Donot change the vagrant file loaction keep it beside the app.sh
 
 What happens in the background:
-The app.sh download vagrant , virtual box and docker pacakges. Once all downloaded the swarm cluster is consturcted and then the vagrant file starts to assign the roles of managers and workers. The next step we take the deploy stack for the voting app and we add labels
+The app.sh download vagrant , virtual box , the unbuntu image and docker pacakges. Once all downloaded the swarm cluster is consturcted and then the vagrant file starts to assign the roles of managers and workers. The next step we take the deploy stack for the voting app and we add labels
 "
 deploy:
   labels:
